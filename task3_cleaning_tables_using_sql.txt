@@ -1,0 +1,51 @@
+-- clean users
+-- ALTER TABLE users
+-- DROP COLUMN email_verified_at ,
+-- DROP COLUMN phone,
+-- DROP COLUMN dob,
+-- DROP COLUMN photo;
+-- ALTER TABLE users RENAME COLUMN id TO user_id;
+
+
+
+-- clean bot_user
+-- ALTER TABLE bot_user
+-- DROP COLUMN created_at ,
+-- DROP COLUMN updated_at;
+
+
+-- clean bot: 
+-- ALTER TABLE bots
+-- DROP COLUMN assistant_id,
+-- DROP COLUMN vector_store_id,
+-- DROP COLUMN thread_id;
+-- ALTER TABLE bots RENAME COLUMN id TO bot_id;
+
+-- clean categories
+-- ALTER TABLE categories RENAME COLUMN id TO category_id;
+
+-- clean orders
+-- ALTER TABLE orders RENAME COLUMN id TO order_id;
+
+
+-- clean order_items
+-- ALTER TABLE order_items
+-- DROP COLUMN special_instructions;
+
+-- clean objects
+-- ALTER TABLE objects RENAME COLUMN id TO object_id;
+
+-- clean companies
+-- ALTER TABLE companies RENAME COLUMN id TO company_id;
+-- select * from companies;
+
+-- clean telescope_entries
+-- ALTER TABLE telescope_entries
+-- DROP COLUMN family_hash;
+
+-- clean clients
+-- ALTER TABLE clients RENAME COLUMN id TO client_id;
+
+
+
+
