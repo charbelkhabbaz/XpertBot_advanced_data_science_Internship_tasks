@@ -45,6 +45,18 @@
 
 -- clean clients
 -- ALTER TABLE clients RENAME COLUMN id TO client_id;
+-- I used here regular expressions to clean the names and keep only the real names.
+-- DELETE 
+-- FROM clients
+-- WHERE client_id > 0
+--   AND name NOT REGEXP '^[A-Za-z]+([ -][A-Za-z]+)*$';
+
+-- DELETE 
+-- FROM clients
+-- WHERE client_id > 0 AND LENGTH(name) <= 2;
+
+-- DELETE FROM clients
+-- WHERE client_id > 0 AND (name = 'A Z' OR name = 'A Y');
 
 
 
