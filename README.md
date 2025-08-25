@@ -8,7 +8,7 @@ This project was completed during my internship at Abidjan.ai, a company special
 The project was structured into five phases to systematically analyze and visualize chatbot data:
 
 # PHASE 1: DATABASE UNDERSTANDING & EXPLORATION
-1- Restore and explore the SQL dump - Import into PostgreSQL/MySQL/SQLite and generate an ERD  
+1- Restore and explore the SQL dump - Import into MySQL and generate an ERD  
 
 please check: taks1_ERD diagram.pdf 
 
@@ -30,24 +30,23 @@ Various supporting tables for categories, menus, orders, etc.
 
 3- Document the schema - Describe tables, keys, and relationships
 
-# 🔧 Technical Implementation
+## 🔧 Technical Implementation
 Data Cleaning & Preparation
 Used regex expressions to filter and clean data rows for example:
 
--- I used here regular expressions to clean the names and keep only the real names.
--- DELETE 
--- FROM clients
--- WHERE client_id > 0
---   AND name NOT REGEXP '^[A-Za-z]+([ -][A-Za-z]+)*$';
+I used here regular expressions to clean the names and keep only the real names:
 
+DELETE FROM clients WHERE client_id > 0 AND name NOT REGEXP '^[A-Za-z]+([ -][A-Za-z]+)*$';
 
 Implemented SQL queries for data validation and transformation
 
-Handled null values and inconsistent data formats (I dropped many empty unsufull tables which We cannot get insights from such as: Posts and Posts_photo they were both empty)
+Handled null values and inconsistent data formats (I dropped several empty, non-useful tables that provided no insights, such as Posts and Posts_photo, since both were empty.)
 
 Performed comprehensive data profiling for each table
 
-# PHASE 2: DATA ANALYSIS (this phase is done 2 ways first one using SQL in a document called: task 4,5,6,7 queries second way using pandas as we can see in the first page of the dashboard)
+# PHASE 2: DATA ANALYSIS
+
+## (this phase is done 2 ways first one using SQL in a document called: task 4,5,6,7 queries second way using pandas as we can see in the first page of the dashboard)
 Conversation volume analysis - Messages per day/week/topic/user
 <img width="1578" height="711" alt="ChatVolumeTrends" src="https://github.com/user-attachments/assets/aa0e4b61-c758-4fe2-bd71-a71a716caa2a" />
 
