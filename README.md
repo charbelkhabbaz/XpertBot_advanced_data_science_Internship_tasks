@@ -54,16 +54,19 @@ Conversation volume analysis: Messages per day/week/topic/user
 
 <img width="1578" height="711" alt="ChatVolumeTrends" src="https://github.com/user-attachments/assets/aa0e4b61-c758-4fe2-bd71-a71a716caa2a" />
 
+
 User engagement analysis: Most active users, avg session length, drop-off rates 
 
 
 <img width="1581" height="626" alt="User Engagement" src="https://github.com/user-attachments/assets/fd7da664-8d7d-4928-b528-feada63d0bdf" />
+
 
 Note: A drop-off rate of 0 indicates that the chatbot is working effectively.
 
 Topic performance: Most frequently used topics and satisfaction scores
 
 <img width="1591" height="631" alt="Topic Performance" src="https://github.com/user-attachments/assets/3dc56e6e-9a97-431b-a8a9-1043e765a789" />
+
 
 Response efficiency: Average response time, number of turns per conversation
 
