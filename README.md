@@ -2,7 +2,7 @@
 
 ## Chatbot Analytics Dashboard - Internship Project
 ## 📋 Project Overview
-This project was completed during my internship at Abidjan.ai, a company specializing in AI-powered chatbot solutions. The main objective was to develop a comprehensive analytics dashboard to analyze chatbot performance, user engagement, and conversation patterns across multiple client deployments.
+This project was completed during my internship at XpertBot, in collaboration with Abidjan.ai, a company specializing in AI-powered chatbot solutions. The main objective was to develop a comprehensive analytics dashboard to evaluate chatbot performance, user engagement, and conversation patterns across multiple client deployments.
 
 ## 🎯 Project Objectives
 The project was structured into five phases to systematically analyze and visualize chatbot data:
@@ -28,19 +28,19 @@ Various supporting tables for categories, menus, orders, etc.
 
 2- Data profiling per table - Count records, check nulls, data types, distributions
 
+please check: task2.docx
 3- Document the schema - Describe tables, keys, and relationships
 
+please check: task3.docx
 ## 🔧 Technical Implementation
 Data Cleaning & Preparation
 Used regex expressions to filter and clean data rows for example:
-
-I used here regular expressions to clean the names and keep only the real names:
 
 DELETE FROM clients WHERE client_id > 0 AND name NOT REGEXP '^[A-Za-z]+([ -][A-Za-z]+)*$';
 
 Implemented SQL queries for data validation and transformation
 
-Handled null values and inconsistent data formats (I dropped several empty, non-useful tables that provided no insights, such as Posts and Posts_photo, since both were empty.)
+Handled null values and inconsistent data formats (several empty were dropped, non-useful tables that provided no insights, such as Posts and Posts_photo, since both were empty.)
 
 Performed comprehensive data profiling for each table
 
@@ -48,23 +48,23 @@ Performed comprehensive data profiling for each table
 
 ## This phase was implemented in two ways: first, using SQL (document titled Task 4, 5, 6, 7 Queries), and second, using Python/Pandas, as shown on the first page of the dashboard.
 
-Conversation volume analysis - Messages per day/week/topic/user
+Conversation volume analysis: Messages per day/week/topic/user
 
 
 <img width="1578" height="711" alt="ChatVolumeTrends" src="https://github.com/user-attachments/assets/aa0e4b61-c758-4fe2-bd71-a71a716caa2a" />
 
-User engagement analysis - Most active users, avg session length, drop-off rates 
+User engagement analysis: Most active users, avg session length, drop-off rates 
 
 
 <img width="1581" height="626" alt="User Engagement" src="https://github.com/user-attachments/assets/fd7da664-8d7d-4928-b528-feada63d0bdf" />
 
 Note: A drop-off rate of 0 indicates that the chatbot is working effectively.
 
-Topic performance - Most frequently used topics and satisfaction scores
+Topic performance: Most frequently used topics and satisfaction scores
 
 <img width="1591" height="631" alt="Topic Performance" src="https://github.com/user-attachments/assets/3dc56e6e-9a97-431b-a8a9-1043e765a789" />
 
-Response efficiency - Average response time, number of turns per conversation
+Response efficiency: Average response time, number of turns per conversation
 
 <img width="1212" height="620" alt="Response Efficiency" src="https://github.com/user-attachments/assets/ff9e536c-3ea4-49b3-9f0f-33655b20ff2a" />
 
@@ -188,4 +188,4 @@ End-to-end data analytics project lifecycle
 
 This project demonstrates the application of data science techniques to solve real-world business problems in the chatbot industry, providing actionable insights for performance optimization and user experience improvement.
 
-# to run this project just uploe the data to the database change connect the database in file called db_ustils to you database and run the app.py using streamlit run app.py
+# To run this project, upload the data to your database, update the connection settings in the db_utils file, and then launch the app with the command: streamlit run app.py
