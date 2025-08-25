@@ -10,7 +10,7 @@ The project was structured into five phases to systematically analyze and visual
 # PHASE 1: DATABASE UNDERSTANDING & EXPLORATION
 1- Restore and explore the SQL dump - Import into MySQL and generate an ERD  
 
-please check: taks1_ERD diagram.pdf 
+please check: task1_ERD diagram.pdf 
 
 Key Tables (based on relationships):
 
@@ -29,6 +29,7 @@ Various supporting tables for categories, menus, orders, etc.
 2- Data profiling per table - Count records, check nulls, data types, distributions
 
 please check: task2.docx
+
 3- Document the schema - Describe tables, keys, and relationships
 
 please check: task3.docx
@@ -40,7 +41,7 @@ DELETE FROM clients WHERE client_id > 0 AND name NOT REGEXP '^[A-Za-z]+([ -][A-Z
 
 Implemented SQL queries for data validation and transformation
 
-Handled null values and inconsistent data formats (several empty were dropped, non-useful tables that provided no insights, such as Posts and Posts_photo, since both were empty.)
+Handled null values and inconsistent data formats (several empty tables were dropped, non-useful tables that provided no insights, such as Posts and Posts_photo, since both were empty.)
 
 Performed comprehensive data profiling for each table
 
@@ -114,7 +115,6 @@ Predict future chat volume using time series forecasting
 
 Recommend new chatbot topics based on user query clusters
 
-Build feedback classifier for user satisfaction
 
 <img width="1577" height="727" alt="ML" src="https://github.com/user-attachments/assets/5a2b4257-c959-4c25-a325-2d70fb47c5f0" />
 
@@ -122,7 +122,6 @@ Build feedback classifier for user satisfaction
 
 ## 🗄️ Database Structure
 The database centers around the bots table, which connects to most other tables, reflecting the chatbot-focused nature of the application:
-
 
 
 
